@@ -185,6 +185,29 @@ button:focus-visible{outline:3px solid #bd7d86;outline-offset:3px}
   min-height: 60px;
   flex-shrink: 0;
 }
+   /* CORRECTION : intégrer les boutons dans le cadre */
+#book.book {
+  min-height: 780px !important;
+  height: 780px !important;
+}
+
+#book .panel {
+  min-height: 780px !important;
+  height: 780px !important;
+  box-sizing: border-box;
+}
+
+#book .front .cutline {
+  margin-top: 18px !important;
+  margin-bottom: 14px !important;
+  flex-shrink: 0;
+}
+
+#book .front .actions {
+  height: auto !important;
+  min-height: 60px;
+  flex-shrink: 0;
+}
  </style>
 </head>
 <body>
