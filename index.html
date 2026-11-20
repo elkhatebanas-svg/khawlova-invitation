@@ -132,28 +132,40 @@ button:focus-visible{outline:3px solid #bd7d86;outline-offset:3px}
 @keyframes heartBeat{0%,100%{transform:translateX(-50%) rotate(-5deg) scale(1)}50%{transform:translateX(-50%) rotate(-2deg) scale(1.045)}}
 @media(max-height:700px){.book,.panel{min-height:590px}.arch{height:160px;margin:17px 0}.cutline{margin-top:38px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
-/* Correction de la hauteur de la carte et des boutons */
-.book {
-  min-height: 780px !important;
-}
-
-.panel {
-  min-height: 780px !important;
-}
-
-.front .arch {
-  height: 155px;
-  margin: 12px 0;
+/* Repositionnement des éléments en bas de la carte */
+.front {
+  position: relative;
 }
 
 .front .cutline {
-  margin-top: 18px;
-  margin-bottom: 14px;
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 105px;
+  width: auto;
+  margin: 0;
 }
 
 .front .actions {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 42px;
+  width: auto;
   height: 60px;
-  flex-shrink: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.front .footstars {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin: 0;
 }
  </style>
 </head>
