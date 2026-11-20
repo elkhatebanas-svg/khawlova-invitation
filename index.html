@@ -132,7 +132,15 @@ button:focus-visible{outline:3px solid #bd7d86;outline-offset:3px}
 @keyframes heartBeat{0%,100%{transform:translateX(-50%) rotate(-5deg) scale(1)}50%{transform:translateX(-50%) rotate(-2deg) scale(1.045)}}
 @media(max-height:700px){.book,.panel{min-height:590px}.arch{height:160px;margin:17px 0}.cutline{margin-top:38px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
-/* Correction de la position des boutons */
+/* Correction de la hauteur de la carte et des boutons */
+.book {
+  min-height: 780px !important;
+}
+
+.panel {
+  min-height: 780px !important;
+}
+
 .front .arch {
   height: 155px;
   margin: 12px 0;
@@ -146,7 +154,6 @@ button:focus-visible{outline:3px solid #bd7d86;outline-offset:3px}
 .front .actions {
   height: 60px;
   flex-shrink: 0;
-  margin-top: auto;
 }
  </style>
 </head>
