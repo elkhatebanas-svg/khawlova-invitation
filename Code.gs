@@ -37,3 +37,18 @@ function doPost(e) {
     lock.releaseLock();
   }
 }
+function testSheetConnection() {
+  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const sheet = ss.getSheets()[0];
+
+  sheet.appendRow([
+    new Date(),
+    "TEST",
+    "Anas",
+    "CONNECTION OK",
+    "14:00",
+    "Test",
+    "Test",
+    "Test"
+  ]);
+}
